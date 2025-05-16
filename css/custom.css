@@ -129,6 +129,23 @@ body {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
 }
 
+/* Test breakpoint */
+@media (max-width: 430px) {
+    .responsive-text {
+        color: #ff0000 !important;
+        font-size: 2rem !important;
+        letter-spacing: 0.1em !important;
+    }
+}
+
+/* Test even smaller breakpoint */
+@media (max-width: 390px) {
+    .responsive-text {
+        color: #00ff00 !important;
+        font-size: 1.8rem !important;
+    }
+}
+
 .masthead h2 {
     font-size: clamp(1.2rem, calc(1rem + 2vw), 1.5rem);
 }
