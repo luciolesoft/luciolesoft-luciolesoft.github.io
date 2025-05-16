@@ -122,9 +122,9 @@ body {
 }
 
 .responsive-text {
-    font-size: clamp(2rem, calc(1.5rem + 3.5vw), 4.5rem);
+    font-size: 4.5rem;
     font-weight: 700;
-    letter-spacing: clamp(0.04em, calc(0.02em + 0.5vw), 0.2em);
+    letter-spacing: 0.2em;
     color: #ffffff;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
 }
@@ -156,14 +156,13 @@ body {
 /* Tablets and medium devices */
 @media (max-width: 768px) {
     .responsive-text {
-        font-size: 2rem;
-        letter-spacing: 0.1em;
+        font-size: 2.5rem;
+        letter-spacing: 0.15em;
     }
     
     .masthead h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.4;
-        margin-bottom: 1rem;
     }
 
     .navbar-brand {
@@ -182,26 +181,15 @@ body {
     }
 }
 
-/* Medium phones */
-@media (max-width: 480px) {
-    .responsive-text {
-        font-size: 1.5rem;
-        letter-spacing: 0.08em;
-    }
-}
-
-/* Modern iPhones */
+/* Larger phones (iPhone Pro Max, Plus models) */
 @media (max-width: 430px) {
     .responsive-text {
-        font-size: 0.9rem;
-        letter-spacing: 0.03em;
-        word-spacing: -0.1em;
+        font-size: 2.2rem;
+        letter-spacing: 0.1em;
     }
     
     .masthead h2 {
-        font-size: 0.75rem;
-        margin: 0.4rem auto;
-        line-height: 1.2;
+        font-size: 1.1rem;
     }
 
     .navbar-brand {
@@ -214,17 +202,27 @@ body {
     }
 }
 
-/* Small iPhones */
-@media (max-width: 375px) {
+/* Modern iPhones (iPhone Pro, standard models) */
+@media (max-width: 393px) {
     .responsive-text {
-        font-size: 0.8rem;
-        letter-spacing: 0.02em;
-        word-spacing: -0.15em;
+        font-size: 2rem;
+        letter-spacing: 0.08em;
     }
     
     .masthead h2 {
-        font-size: 0.7rem;
-        margin: 0.3rem auto;
+        font-size: 1rem;
+    }
+}
+
+/* Small iPhones */
+@media (max-width: 375px) {
+    .responsive-text {
+        font-size: 1.8rem;
+        letter-spacing: 0.06em;
+    }
+    
+    .masthead h2 {
+        font-size: 0.95rem;
     }
 }
 
