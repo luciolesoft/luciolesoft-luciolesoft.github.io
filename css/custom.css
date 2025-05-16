@@ -122,11 +122,15 @@ body {
 }
 
 .responsive-text {
-    font-size: 4.5rem;
+    font-size: clamp(2rem, calc(1.5rem + 3.5vw), 4.5rem);
     font-weight: 700;
-    letter-spacing: 0.2em;
+    letter-spacing: clamp(0.04em, calc(0.02em + 0.5vw), 0.2em);
     color: #ffffff;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+}
+
+.masthead h2 {
+    font-size: clamp(1.2rem, calc(1rem + 2vw), 1.5rem);
 }
 
 #mainNav {
