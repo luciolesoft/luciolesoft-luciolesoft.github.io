@@ -125,25 +125,39 @@ body {
     font-size: 4.5rem !important;
     font-weight: 700;
     letter-spacing: 0.2em !important;
-    color: purple !important;
+    color: #ffffff;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
-    border: 5px solid yellow !important;
 }
 
-/* Test breakpoint */
+/* Tablets and medium devices */
+@media (max-width: 768px) {
+    .responsive-text {
+        font-size: 2.5rem !important;
+        letter-spacing: 0.15em !important;
+    }
+}
+
+/* Larger phones (iPhone Pro Max, Plus models) */
 @media (max-width: 430px) {
     .responsive-text {
-        color: #ff0000 !important;
-        font-size: 2rem !important;
+        font-size: 2.2rem !important;
         letter-spacing: 0.1em !important;
     }
 }
 
-/* Test even smaller breakpoint */
-@media (max-width: 390px) {
+/* Modern iPhones (iPhone Pro, standard models) */
+@media (max-width: 393px) {
     .responsive-text {
-        color: #00ff00 !important;
+        font-size: 2rem !important;
+        letter-spacing: 0.08em !important;
+    }
+}
+
+/* Small iPhones */
+@media (max-width: 375px) {
+    .responsive-text {
         font-size: 1.8rem !important;
+        letter-spacing: 0.06em !important;
     }
 }
 
@@ -252,4 +266,5 @@ body {
     left: 0;
     z-index: 1;
     background-color: transparent;
+} 
 } 
